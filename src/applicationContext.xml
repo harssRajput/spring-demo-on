@@ -13,13 +13,15 @@
 		class="com.harsh.springDemo.HappyFortuneService">
 	</bean>
 	
+	
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.harsh.springDemo.BaseballCoach">
+    	class="com.harsh.springDemo.CricketCoach">
     	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune"/>
     </bean>
+    
 </beans>
 
 
