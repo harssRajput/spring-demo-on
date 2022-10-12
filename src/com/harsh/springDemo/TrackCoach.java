@@ -23,5 +23,14 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
-
+	
+	//spring init method
+	public void doStartUpThings() {
+		System.out.println("TrackCoach: init method called by spring");
+	}
+	
+	//spring destroy method
+	public void doCleanUpStuff() {
+		System.out.println("TrachCoach: destroy method called by spring");
+	}
 }
