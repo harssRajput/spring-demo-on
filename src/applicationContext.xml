@@ -16,10 +16,18 @@
 	
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.harsh.springDemo.CricketCoach">
+    	class="com.harsh.springDemo.BaseballCoach">
     	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune"/>
+    </bean>
+    
+    <!-- Define your beans here -->
+    <bean id="myCricketCoach"
+    	class="com.harsh.springDemo.CricketCoach">
+    	
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune"/>
     </bean>
     
 </beans>
